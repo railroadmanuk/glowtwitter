@@ -3,12 +3,16 @@
 from PyGlow import PyGlow
 from time import sleep
 from datetime import datetime
-# List all colours
+
+# designate keys file
+keyfile = '/Users/tim/mykeys'
+
+# list all colours
 all_colours = ["white","blue","green","yellow","orange","red"]
 
 # instantiate the PyGlow API
 pyglow = PyGlow()
-# Clear the current status
+# clear the current status
 pyglow.all(0)
 
 def notify_glow(num_pulses, in_colours):
@@ -18,8 +22,13 @@ def notify_glow(num_pulses, in_colours):
       sleep(0.1)
       pyglow.all(0)
 
+def read_creds(keyfile):
+    f = open(keyfile,'r')
+    for line in f:
+      print line
+
 def main():
-  # Test glow with all colours
+  # test glow with all colours
   notify_glow(5,all_colours)
 
 if __name__ == "__main__":
