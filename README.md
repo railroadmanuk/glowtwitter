@@ -4,4 +4,4 @@ This project is to combine the Twitter API with the PiGlow Raspberry Pi accessor
 ## Dependencies
 This project relies on the PyGlow Python library, available at: https://github.com/benleb/PyGlow
 
-![](logo.png)
+![](logo.png =100x)
