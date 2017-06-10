@@ -30,6 +30,8 @@ def read_creds(keyfile):
 def main():
   # test glow with all colours
   notify_glow(5,all_colours)
+  notify_glow(3,["blue","white"])
+  notify_glow(3,["orange","white"])
 
 if __name__ == "__main__":
   main()
